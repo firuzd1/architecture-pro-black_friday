@@ -1,0 +1,148 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="wcrPfL2p_K-TKZ7hsO-E">
+    <mxGraphModel dx="1072" dy="1136" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="user_eu" parent="1" style="shape=mxgraph.cisco.computers_and_peripherals.pc;html=1;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;" value="User EU" vertex="1">
+          <mxGeometry height="50" width="50" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="user_as" parent="1" style="shape=mxgraph.cisco.computers_and_peripherals.pc;html=1;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;" value="User Asia" vertex="1">
+          <mxGeometry height="50" width="50" x="40" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="user_ru" parent="1" style="shape=mxgraph.cisco.computers_and_peripherals.pc;html=1;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;" value="User RU" vertex="1">
+          <mxGeometry height="50" width="50" x="40" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="cdn_eu" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;" value="CDN&#xa;(EU)" vertex="1">
+          <mxGeometry height="60" width="120" x="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cdn_as" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;" value="CDN&#xa;(Asia)" vertex="1">
+          <mxGeometry height="60" width="120" x="180" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cdn_ru" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;" value="CDN&#xa;(RU)" vertex="1">
+          <mxGeometry height="60" width="120" x="180" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="API Gateway" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="consul1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Consul&#xa;(Service Discovery)" vertex="1">
+          <mxGeometry height="60" width="140" x="390" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="app1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="pymongo-api-1" vertex="1">
+          <mxGeometry height="60" width="120" x="620" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="app2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="pymongo-api-2" vertex="1">
+          <mxGeometry height="60" width="120" x="620" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="redis1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="redis" vertex="1">
+          <mxGeometry height="60" width="120" x="820" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="router1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="mongos&#xa;(router)" vertex="1">
+          <mxGeometry height="60" width="120" x="820" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="cfgGroup" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#9673a6;verticalAlign=top;" value="Config Replica Set" vertex="1">
+          <mxGeometry height="120" width="260" x="1020" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="cfg1" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;" value="configSrv-1" vertex="1">
+          <mxGeometry height="70" width="60" x="1030" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="cfg2" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;" value="configSrv-2" vertex="1">
+          <mxGeometry height="70" width="60" x="1110" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="cfg3" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;" value="configSrv-3" vertex="1">
+          <mxGeometry height="70" width="60" x="1190" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="shard1Group" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#82b366;verticalAlign=top;" value="Shard 1 Replica Set" vertex="1">
+          <mxGeometry height="130" width="280" x="600" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="s1n1" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="shard1-1&#xa;(primary)" vertex="1">
+          <mxGeometry height="80" width="60" x="620" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="s1n2" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="shard1-2&#xa;(secondary)" vertex="1">
+          <mxGeometry height="80" width="60" x="710" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="s1n3" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="shard1-3&#xa;(secondary)" vertex="1">
+          <mxGeometry height="80" width="60" x="800" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="shard2Group" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#82b366;verticalAlign=top;" value="Shard 2 Replica Set" vertex="1">
+          <mxGeometry height="130" width="280" x="960" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="s2n1" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="shard2-1&#xa;(primary)" vertex="1">
+          <mxGeometry height="80" width="60" x="980" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="s2n2" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="shard2-2&#xa;(secondary)" vertex="1">
+          <mxGeometry height="80" width="60" x="1070" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="s2n3" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="shard2-3&#xa;(secondary)" vertex="1">
+          <mxGeometry height="80" width="60" x="1160" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="e_eu_cdn" edge="1" parent="1" source="user_eu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="cdn_eu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_as_cdn" edge="1" parent="1" source="user_as" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="cdn_as">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ru_cdn" edge="1" parent="1" source="user_ru" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="cdn_ru">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cdn_eu_gw" edge="1" parent="1" source="cdn_eu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="gateway1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cdn_as_gw" edge="1" parent="1" source="cdn_as" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="gateway1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cdn_ru_gw" edge="1" parent="1" source="cdn_ru" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="gateway1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_gw_app1" edge="1" parent="1" source="gateway1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="app1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_gw_app2" edge="1" parent="1" source="gateway1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="app2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_consul_gw" edge="1" parent="1" source="consul1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;" target="gateway1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app1_consul" edge="1" parent="1" source="app1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;" target="consul1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app2_consul" edge="1" parent="1" source="app2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;" target="consul1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app1_redis" edge="1" parent="1" source="app1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="redis1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app2_redis" edge="1" parent="1" source="app2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="redis1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app1_router" edge="1" parent="1" source="app1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="router1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app2_router" edge="1" parent="1" source="app2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="router1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_router_cfg" edge="1" parent="1" source="router1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="cfg1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_router_s1" edge="1" parent="1" source="router1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="s1n1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_router_s2" edge="1" parent="1" source="router1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="s2n1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s1_repl1" edge="1" parent="1" source="s1n1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;" target="s1n2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s1_repl2" edge="1" parent="1" source="s1n1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;" target="s1n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s2_repl1" edge="1" parent="1" source="s2n1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;" target="s2n2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_s2_repl2" edge="1" parent="1" source="s2n1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;" target="s2n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
